@@ -1,5 +1,4 @@
 import React from 'react';
-import { GlobalSearch } from './GlobalSearch';
 import { motion, AnimatePresence } from 'motion/react';
 import { Bell, Settings, User } from 'lucide-react';
 
@@ -76,7 +75,6 @@ export function TopBar({ setActiveTab }: TopBarProps) {
   return (
     <div className="h-20 border-b border-white/20 bg-white/60 backdrop-blur-2xl sticky top-0 z-40 px-10 flex items-center justify-between glass-morphism">
       <div className="flex-1 max-w-2xl flex items-center gap-8">
-        <GlobalSearch setActiveTab={setActiveTab} />
         
         <div className="hidden xl:flex flex-col gap-1 w-48">
           <div className="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-widest">
